@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Software Sevelopment & IT Outsourcing Company in UK | 4C Tech</title>
-  <link rel="icon" type="image/x-icon" href="../assests/company-logo.png" style="width: 16px; height: 16px;">
+  <link rel="shortcut icon" href="../assests/company-logo.png" type="image/x-icon">
 
   <!-- Bootstrap -->
   <link href="../css/bootstrap.css" rel="stylesheet" />
@@ -33,10 +33,11 @@
   <!-- slick css -->
   <link rel="stylesheet" href="../css/slick/slick.css" />
   <link rel="stylesheet" href="../css/slick/slick-theme.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
-    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css" />
+
+  <!-- Animation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 
 <body>
@@ -45,16 +46,15 @@
       <div class="container">
         <div class="nav-items">
           <div class="logo">
-            <a href="https://www.4cpl.tech/">
+            <a href="./home.html">
               <img src="../assests/logo.svg" alt="4C Consulting Logo" />
             </a>
           </div>
           <nav>
-            <!-- <div class="black-overlay" style="display: none"></div> -->
             <div class="navmenu">
               <ul id="menu-header-main-menu" class="">
                 <li class="nav-item">
-                  <a href="#">SERVICES</a>
+                  <a href="./services.html">SERVICES</a>
                   <ul class="navmenu-dropdown">
                     <li><a href="./webdev.html">Web Development</a></li>
                     <li>Mobile Development</li>
@@ -102,37 +102,24 @@
             <div class="main-section">
               <section class="carousel-section">
                 <div class="slick-carousel">
-                  <div>
-                    <img src="../assests/first-slide.png" alt="Image 1" />
-                  </div>
-                  <div>
-                    <img src="../assests/second-slide.png" alt="Image 2" />
-                  </div>
-                  <div>
-                    <img src="../assests/third-slide.png" alt="Image 3" />
-                  </div>
+                  <div><img src="../assests/first-slide.png" alt="Image 1" /></div>
+                  <div><img src="../assests/second-slide.png" alt="Image 2" /></div>
+                  <div><img src="../assests/third-slide.png" alt="Image 3" /></div>
                 </div>
               </section>
               <section class="solution">
                 <div class="container">
                   <div class="content">
                     <div class="solution-img">
-                      <img src="../assests/solution-img.png" alt="" />
+                      <img class="wow animate__animated animate__fadeInLeft" src="../assests/solution-img.png" alt="" />
                     </div>
-                    <div class="solution-content">
+                    <div class="solution-content wow animate__animated animate__fadeInRight">
                       <h1>
                         <span>Orchestrating</span>
                         future-friendly solutions
                       </h1>
                       <p>
-                        We've often heard brands, experts, and leaders say
-                        that technology is the future. But what does this
-                        really entail? It means that the future will be marked
-                        by problems that are almost impossible to foresee or
-                        predict. And to conquer these problems, we will have
-                        to use the power of technology in unpredictable and
-                        unusual ways. At 4C, we aim to unlock the potential of
-                        this technology to achieve success for your business.
+                        We've often heard brands, experts, and leaders say that technology is the future. But what does this really entail? It means that the future will be marked by problems that are almost impossible to foresee or predict. And to conquer these problems, we will have to use the power of technology in unpredictable and unusual ways. At 4C, we aim to unlock the potential of this technology to achieve success for your business.
                       </p>
                       <button type="button">Know More</button>
                     </div>
@@ -142,16 +129,13 @@
               <section class="development">
                 <div class="container">
                   <div class="development-content">
-                    <div class="col-lg-8 col-xl-6 list-itmes mb-15 wow fadeInLeft">
+                    <div class="col-lg-8 col-xl-6 list-itmes mb-15 wow animate__animated animate__fadeInLeft">
                       <h2>
                         <span>Creating a</span>
                         Nexus of Performance
                       </h2>
                       <p>
-                        We provide a range of services to help your company
-                        achieve success. Innovative ideas, cutting-edge
-                        technology, and strategic agility form this Nexus of
-                        Performance that always delivers impressive results.
+                        We provide a range of services to help your company achieve success. Innovative ideas cutting-edge technology, and strategic agility form this Nexus of Performance that always delivers impressive results.
                       </p>
                     </div>
                     <!-- <div class="dev-slick">
@@ -167,7 +151,7 @@
                 <div class="container">
                   <div class="row justify-content-center">
                     <div class="tech-heading">
-                      <h2>
+                      <h2 class="wow animate__animated animate__fadeInDown">
                         <span>Leveraging state-of-the</span>
                         art technologies
                       </h2>
@@ -179,20 +163,16 @@
                             role="tab" aria-selected="false">Backend</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab_2" type="button" role="tab"
-                            aria-selected="false">Frontend</button>
+                          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab_2" type="button" role="tab" aria-selected="false">Frontend</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab_3" type="button" role="tab"
-                            aria-selected="false">Database</button>
+                          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab_3" type="button" role="tab" aria-selected="false">Database</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab_4" type="button" role="tab"
-                            aria-selected="false">Cloud</button>
+                          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab_4" type="button" role="tab" aria-selected="false">Cloud</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab_5" type="button" role="tab"
-                            aria-selected="true">Mobile</button>
+                          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab_5" type="button" role="tab" aria-selected="true">Mobile</button>
                         </li>
                       </ul>
                       <div class="tab-content" id="myTabContent">
@@ -289,7 +269,7 @@
                 <div class="container">
                   <div class="project-wrapper">
                     <div class="row">
-                      <div class="project-content">
+                      <div class="project-content wow animate__animated animate__fadeInLeft">
                         <h2>Reimagining the purpose of <br> technology for viable <br> solutions</h2>
                         <p>At 4C, we harness the power of the technology for a variety of <br> clients. And our unique,
                           insightful, and scalable solutions are <br> customised according to your need, to produce the
@@ -646,25 +626,16 @@
               <section class="solution">
                 <div class="container">
                   <div class="content">
-                    <div class="solution-image">
+                    <div class="solution-image wow animate__animated animate__fadeInLeft">
                       <img src="../assests/ballons-text.png" alt="" />
                     </div>
-                    <div class="solution-content">
+                    <div class="solution-content wow animate__animated animate__fadeInRight">
                       <h1>
                         <span>Crafting realms</span>
                         of excellence
                       </h1>
                       <p class="solution-content-p">
-                        Continuous and consistent adaptability leads
-                        businesses to flourishing achievements. To that end,
-                        our Indian division works closely with small and large
-                        businesses to understand their strengths, manage their
-                        risks through futuristic strategies, and ensure
-                        business continuity through sustainable process
-                        improvement. From Process Excellence to Operational
-                        Excellence and Business Excellence, we provide every
-                        service that leads businesses towards long-term
-                        improvements and standardization.
+                        Continuous and consistent adaptability leads businesses to flourishing achievements. To that end, our Indian division works closely with small and large businesses to understand their strengths, manage their risks through futuristic strategies, and ensure business continuity through sustainable process improvement. From Process Excellence to Operational Excellence and Business Excellence, we provide every service that leads businesses towards long-term improvements and standardization.
                       </p>
                       <button type="button">Visit 4cpl.com</button>
                     </div>
@@ -737,20 +708,13 @@
               <h3>Find us at</h3>
               <div class="addressdetail">
                 <strong>uk</strong>
-                <p>35 Monarch Street,<br>
-                  Hemel Hempstead, <br>
-                  HP2 7BU<br>
-                  England</p>
+                <p>35 Monarch Street,<br> Hemel Hempstead, <br> HP2 7BU<br> England</p>
                 <div class="contactinfo"><span>M:</span> <a href="tel:+44 7492277032">+44 7492277032</a></div>
                 <div class="contactinfo"><span>E:</span> <a href="mailto:info@4cpl.com">info@4cpl.com</a></div>
               </div>
               <div class="addressdetail">
                 <strong>India</strong>
-                <p>605, Abhishree Avenue,<br>
-                  Nehrunagar Ambavadi Road,<br>
-                  Near Nehrunagar Circle,<br>
-                  Ahmedabad - 380015<br>
-                  Gujarat, India</p>
+                <p>605, Abhishree Avenue,<br> Nehrunagar Ambavadi Road,<br> Near Nehrunagar Circle,<br> Ahmedabad - 380015<br> Gujarat, India</p>
                 <div class="contactinfo"><span>M:</span> <a href="tel:+91 99041 03636">+91 99041 03636</a></div>
                 <div class="contactinfo"><span>E:</span> <a href="mailto:info@4cpl.com">info@4cpl.com</a></div>
               </div>
@@ -779,7 +743,7 @@
         </div>
       </div>
     </footer>
-    <div class="popup-main" id="popup-main">
+    <div class="popup-main wow animate__animated animate__fadeIn" id="popup-main">
       <div class="popup-inner">
         <a class="popup-close" href="#">x</a>
         <h2>Get your First <br> <b> 100 Hr. Free Development</b></h2>
@@ -795,16 +759,11 @@
     </div>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
-    integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
   <script src="../css/slick/slick.js"></script>
   <script type="text/javascript">
@@ -841,6 +800,12 @@
     document.querySelector('.popup-close').onclick = function() {
       document.querySelector('.popup-main').classList.remove('show');
     };
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer" ></script>
+
+  <script>
+    new WOW().init();
   </script>
 </body>
 </html>
